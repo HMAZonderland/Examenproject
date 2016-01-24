@@ -1,0 +1,23 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    font-size: 36px;
+    color: white;
+    background-color: dimgrey;
+    width: 100%;
+    padding: 40px;
+}
+
+header div.login {
+    display: inline;
+    font-size: 24px;
+}
+
+#container {
+    margin: auto;
+    width: 1024px;
+}
