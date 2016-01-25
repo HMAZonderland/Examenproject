@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ANPNews\\' => array($baseDir . '/src'),
+    'Project\\' => array($baseDir . '/src'),
 );

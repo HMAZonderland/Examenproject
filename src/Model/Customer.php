@@ -1,5 +1,5 @@
 <?php
-namespace ANPNews\Model;
+namespace Project\Model;
 
 class Customer
 {

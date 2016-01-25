@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-01-23 16:11:39
+/* Smarty version 3.1.29, created on 2016-01-25 08:29:38
   from "/Users/Combidi/Box Sync/Combidi/PHP/Examenproject/resources/smarty/template/header.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_56a3982bd4e852_78299382',
+  'unifunc' => 'content_56a5cee2173774_34352832',
   'file_dependency' => 
   array (
     '10e84559d0ac434cd567e45b7b4c30381b0f157e' => 
     array (
       0 => '/Users/Combidi/Box Sync/Combidi/PHP/Examenproject/resources/smarty/template/header.tpl',
-      1 => 1453561899,
+      1 => 1453626067,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_56a3982bd4e852_78299382 ($_smarty_tpl) {
+function content_56a5cee2173774_34352832 ($_smarty_tpl) {
 ?>
 <!doctype html>
 

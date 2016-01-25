@@ -8,7 +8,12 @@ require_once '../bootstrap.php';
 
 // extract the section variable, check if the Controller class exists
 $section = $_GET['section'];
-$controllerName = 'ANPNews\\Controller\\' . ucfirst($section) . 'Controller';
+
+if (!isset($_GET['section'])) {
+    header('location: index.php?section=user&action=login');
+}
+
+$controllerName = 'Project\\Controller\\' . ucfirst($section) . 'Controller';
 if (!class_exists($controllerName)) {
     die('Unknown section called, please check your `?section=` variable.');
 }

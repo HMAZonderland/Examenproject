@@ -6,7 +6,7 @@
  * Time: 13:21
  */
 
-namespace ANPNews\Repository;
+namespace Project\Repository;
 
 
 abstract class Repository

@@ -1,6 +1,6 @@
 <?php
-namespace ANPNews\Controller;
-use ANPNews\Repository\UserRepository;
+namespace Project\Controller;
+use Project\Repository\UserRepository;
 
 abstract class Controller
 {

@@ -1,6 +1,6 @@
 <?php
-namespace ANPNews\Controller;
-use ANPNews\Repository\CustomerRepository;
+namespace Project\Controller;
+use Project\Repository\CustomerRepository;
 
 class CustomerController extends Controller
 {

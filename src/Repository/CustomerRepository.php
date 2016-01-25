@@ -1,6 +1,6 @@
 <?php
-namespace ANPNews\Repository;
-use ANPNews\Model\Customer;
+namespace Project\Repository;
+use Project\Model\Customer;
 
 class CustomerRepository extends Repository
 {

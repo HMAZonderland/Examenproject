@@ -1,7 +1,7 @@
 <?php
-namespace ANPNews\Controller;
-use ANPNews\Repository\CustomerRepository;
-use ANPNews\Repository\UserRepository;
+namespace Project\Controller;
+use Project\Repository\CustomerRepository;
+use Project\Repository\UserRepository;
 
 class UserController extends Controller
 {
