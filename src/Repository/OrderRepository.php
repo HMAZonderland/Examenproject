@@ -18,7 +18,7 @@ class OrderRepository extends Repository
 
     public function getOrder($id) : Order
     {
-        $query = 'SELECT * FROM order WHERE id = :id';
+        $query = 'SELECT * FROM `order` WHERE id = :id';
 
         $statement = $this->db->prepare($query);
         $statement->bindParam(':id', $id);

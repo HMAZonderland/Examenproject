@@ -19,8 +19,6 @@ class UserRepository extends Repository
 
     public function addUser(string $username, string $password, Customer $customer, string $firstname = null, string $lastname = null) : User
     {
-        // prehash the password, have to use later on
-        $password = password_hash($password, PASSWORD_BCRYPT);
 
         // define the first part of the query
         $query = 'INSERT INTO `user` (`user`.`username`, `user`.`password`, `user`.`customer_id` ';
@@ -87,7 +85,7 @@ class UserRepository extends Repository
             return null;
         }
 
-        if (!password_verify($password, $row['password'])) {
+        if ($password != $row['password']) {
             return null;
         }
 

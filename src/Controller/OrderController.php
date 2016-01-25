@@ -24,9 +24,10 @@ class OrderController extends Controller
         $id = $_GET['id'];
 
         $orderRepository = new OrderRepository($this->pdo);
-        $orders = $orderRepository->getOrders();
+        $order = $orderRepository->getOrder($id);
 
-        $this->smarty->assign('order', $orders);
+        $this->smarty->assign('header', 'Order');
+        $this->smarty->assign('order', $order);
         $this->smarty->display('order/view.tpl');
     }
 }
