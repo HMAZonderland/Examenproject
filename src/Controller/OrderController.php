@@ -1,6 +1,6 @@
 <?php
 namespace Project\Controller;
-use Project\Repository\CustomerRepository;
+use Project\Repository\OrderRepository;
 
 class OrderController extends Controller
 {
@@ -24,9 +24,9 @@ class OrderController extends Controller
         $id = $_GET['id'];
 
         $orderRepository = new OrderRepository($this->pdo);
-        $order = $orderRepository->getOrder($id);
+        $orders = $orderRepository->getOrders();
 
-        $this->smarty->assign('order', $order);
+        $this->smarty->assign('order', $orders);
         $this->smarty->display('order/view.tpl');
     }
 }
