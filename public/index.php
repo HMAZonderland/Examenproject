@@ -15,7 +15,7 @@ if (!isset($_GET['section'])) {
 
 $controllerName = 'Project\\Controller\\' . ucfirst($section) . 'Controller';
 if (!class_exists($controllerName)) {
-    die('Unknown section called, please check your `?section=` variable.');
+    die('Unknown section called, please check your "?section=" variable. ' . 'You called the ' . $controllerName . ' class');
 }
 
 // Extract the action to execute, otheriwse default to index
