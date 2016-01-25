@@ -1,8 +1,8 @@
 <?php
 namespace Project\Controller;
-//use Project\Repository\CustomerRepository;
+use Project\Repository\CustomerRepository;
 
-class CustomerController extends Controller
+class OrderController extends Controller
 {
     public function __construct(\PDO $pdo, \Smarty $smarty)
     {

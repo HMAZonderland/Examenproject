@@ -7,7 +7,7 @@ class OrderRepository extends Repository
 
     public function getOrders() : array
     {
-        $query = 'SELECT `customer`.* FROM `customer`';
+        $query = 'SELECT * FROM `order`';
 
         $statement = $this->db->prepare($query);
         $statement->execute();
